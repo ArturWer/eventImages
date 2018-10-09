@@ -1,8 +1,30 @@
-let img = document.querySelector('img');
+let imgages = document.querySelectorAll('img');
+console.log(imgages);
 
-img.addEventListener ('mouseover', function () {
-	img.attributes.src.nodeValue = "img/IMG_0524.JPG";
-}, false);
-img.addEventListener ('mouseout', function () {
-	img.attributes.src.nodeValue = "img/IMG_0530.JPG";
-}, false);
+for (let i = imgages.length - 1; i >= 0; i--) {
+	imgages[i].addEventListener ('mouseover', function (e) {
+		changeImg(e.target);
+	}, false);
+	imgages[i].addEventListener ('mouseout', function (e) {
+		imgBack(e.target);
+	}, false);
+};
+
+function changeImg(target){
+	let className = target.className;
+		console.log(target.attributes.src.nodeValue);
+		if (className === 'river') {
+			target.attributes.src.nodeValue = "img/IMG_0284.JPG";
+		} else if(className === 'fly'){
+			target.attributes.src.nodeValue = "img/IMG_0283.JPG"
+		};
+};
+function imgBack(target){
+	let className = target.className;
+		console.log(target.attributes.src.nodeValue);
+		if (className === 'river') {
+			target.attributes.src.nodeValue = "img/IMG_0471.JPG";
+		} else if(className === 'fly'){
+			target.attributes.src.nodeValue = "img/IMG_0524.JPG"
+		};
+};
