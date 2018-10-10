@@ -10,4 +10,10 @@ img{
 	border-radius: 3px;
 	padding: 5px;
 	margin: 6px;
+	max-width: 600px;
+}
+@media (min-width: 250px;)and(max-width: 600px;){
+	img{
+		width: 95%;
+	}
 }
