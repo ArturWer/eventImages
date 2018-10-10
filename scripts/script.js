@@ -8,6 +8,9 @@ for (let i = images.length - 1; i >= 0; i--) {
 	images[i].addEventListener ('mouseout', function (e) {
 		imgBack(e.target);
 	}, false);
+	images[i].addEventListener ('click', function (e) {
+		clickImg(e.target);
+	}, false);
 };
 
 function changeImg(target){
@@ -24,5 +27,13 @@ function imgBack(target){
 			target.attributes.src.nodeValue = "img/IMG_0471_600w.JPG";
 		} else if(className === 'fly'){
 			target.attributes.src.nodeValue = "img/IMG_0524_600w.JPG"
+		};
+};
+function clickImg(target){
+	let className = target.className;
+		if (className === 'river') {
+			target.attributes.src.nodeValue = "img/IMG_9387_600w.jpg";
+		} else if(className === 'fly'){
+			target.attributes.src.nodeValue = "img/IMG_9464_600w.JPG"
 		};
 };
