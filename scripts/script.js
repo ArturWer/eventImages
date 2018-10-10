@@ -14,9 +14,9 @@ function changeImg(target){
 	let className = target.className;
 		console.log(target.attributes.src.nodeValue);
 		if (className === 'river') {
-			target.attributes.src.nodeValue = "img/IMG_0284.JPG";
+			target.attributes.src.nodeValue = "img/IMG_0282_600w.jpg";
 		} else if(className === 'fly'){
-			target.attributes.src.nodeValue = "img/IMG_0283.JPG"
+			target.attributes.src.nodeValue = "img/IMG_0283_600w.jpg"
 		};
 };
 function imgBack(target){
