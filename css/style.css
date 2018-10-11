@@ -14,6 +14,6 @@ img{
 	max-width: 600px;
 }
 img:hover{
-	border-radius: 42px;
-	transition: 1s; 
+	border-radius: 342px;
+	transition: 10s; 
 }
