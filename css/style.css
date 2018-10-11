@@ -13,3 +13,7 @@ img{
 	margin: 6px;
 	max-width: 600px;
 }
+img:hover{
+	border-radius: 42px;
+	transition: 1s; 
+}
